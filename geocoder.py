@@ -2,7 +2,7 @@ import requests
 import json
 
 
-API_KEY = '40d1648f-0493-4b70-98ba-98533de?710b'
+API_KEY = '!!!'
 
 
 def geocode(address):
@@ -12,7 +12,7 @@ def geocode(address):
         "geocode": address,
         "format": "json"}
 
-    # Выполняем звпрос.
+    # Выполняем запрос
     response = requests.get(geocoder_request, params=geocoder_params)
 
     if response:
